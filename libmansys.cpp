@@ -12,7 +12,7 @@
  #include<stdlib.h>
  #include<iomanip.h>
 
- class lib
+ class library
  {
     protected:
         char name[25][25];
@@ -22,7 +22,7 @@
 
  };
 
- class fn:public lib
+ class fn:public library
  {
         int z;
     public:
@@ -41,7 +41,7 @@
     clrscr();
 
     fstream f1;
-    f1.open("book1.txt",ios::out|ios::app);
+    f1.open("book.txt",ios::out|ios::app);
 
     cout<<"\n\nEnter the book name   :";
     cin>>name[z];
@@ -85,7 +85,7 @@
     cin>>i;
 
     fstream f2;
-    f2.open("book1.txt",ios::in|ios::out|ios::nocreate);
+    f2.open("book.txt",ios::in|ios::out|ios::nocreate);
 
     f2.seekg(0);
 
@@ -136,7 +136,7 @@
     cin>>j;
 
     fstream f6;
-    f6.open("book1.txt",ios::in|ios::out|ios::nocreate);
+    f6.open("book.txt",ios::in|ios::out|ios::nocreate);
 
     f6.seekg(0);
 
@@ -212,7 +212,7 @@
     cin>>j;
 
     fstream f4;
-    f4.open("book1.txt",ios::in|ios::app);
+    f4.open("book.txt",ios::in|ios::app);
     f4.seekg(0);
 
     char c[20],d[20];
