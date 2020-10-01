@@ -1,17 +1,17 @@
 /*
-     A Program for "RAISONI COLLEGE LIBRARY MANAGEMENT",
+     A Program for "GH RAISONI COLLEGE OF ENGINEERING AND MANAGEMENT, PUNE LIBRARY MANAGEMENT",
      through which we can maintain the all books of the Library;
      including   Book Name,  Writter Name,  Book Code  &  Copy of the book.
 
 ----------------------------------------------------------------------------*/
 
- #include<iostream.h>
+ #include<iostream>
  #include<conio.h>
- #include<fstream.h>
+ #include<fstream>
  #include<string.h>
  #include<stdlib.h>
- #include<iomanip.h>
-
+ #include<iomanip>
+using namespace std;
  class library
  {
     protected:
@@ -38,10 +38,8 @@
  {
     int m,n,k;
 
-    clrscr();
-
     fstream f1;
-    f1.open("book.txt",ios::out|ios::app);
+    f1.open("book.txt",ios::out|ios::app);  //ios::out are modes
 
     cout<<"\n\nEnter the book name   :";
     cin>>name[z];
@@ -79,7 +77,6 @@
  {
     int i;
 
-    clrscr();
 
     cout<<"\nPlease enter the book code:";
     cin>>i;
@@ -126,7 +123,7 @@
 
  }
 
- void fn :: plus(void)    
+ void fn :: plus(void)           //To add a copy of book to list
  {
     int j;
 
@@ -135,6 +132,14 @@
     cout<<"\nPlease enter the book code:";
     cin>>j;
 
+    fstream f6;
+    f6.open("book.txt",ios::in|ios::out|ios::nocreate);
+
+    f6.seekg(0);
+
+    char c[30];
+    int e,r,t;
+    char *p;
 
     while(f6.eof()==0)
     {
@@ -175,7 +180,9 @@
     clrscr();
 
     fstream f3;
-    
+    f3.open("book1.txt",ios::in|ios::app);
+    f3.seekg(0);
+
 
     char a;
 
@@ -190,6 +197,8 @@
         f3.get(a);
         cout<<a;
     }
+    f3.close();
+    getch();
  }
 
  void fn :: srch ()          //To search a book with its code from list
@@ -300,3 +309,5 @@
     getch();
     return 0;
  }
+
+
