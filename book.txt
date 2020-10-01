@@ -1,0 +1,15 @@
+book.txt Data :
+
+Oop_C++                   Balagurushamy         1                25
+Teach_urself_C++          Schildt               2                22
+Let_us_C++                Kanetkar              3                15
+Physics                   Beiser                11               15
+Chemisry                  Kundu                 12               15
+Electronics_devices       Bell                  21               16
+Circuit_theory            Boyelstead            22               18
+Discrete_math             Rosen                 4                25
+Geometry                  Das                   31               15
+Calculas                  Rahman                30               19
+English                   Harve                 41               3
+Mathematics               Rashid                5                16
+Solid_state               Jain                  6                23
