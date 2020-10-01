@@ -126,7 +126,7 @@
 
  }
 
- void fn :: plus(void)           //To add a copy of book to list
+ void fn :: plus(void)    
  {
     int j;
 
@@ -135,14 +135,6 @@
     cout<<"\nPlease enter the book code:";
     cin>>j;
 
-    fstream f6;
-    f6.open("book.txt",ios::in|ios::out|ios::nocreate);
-
-    f6.seekg(0);
-
-    char c[30];
-    int e,r,t;
-    char *p;
 
     while(f6.eof()==0)
     {
@@ -198,8 +190,6 @@
         f3.get(a);
         cout<<a;
     }
-    f3.close();
-    getch();
  }
 
  void fn :: srch ()          //To search a book with its code from list
