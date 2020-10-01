@@ -1,7 +1,7 @@
 /*
      A Program for "RAISONI COLLEGE LIBRARY MANAGEMENT",
      through which we can maintain the all books of the Library;
-     including   Book name,  Writter name,  Book code  &  Copy of the book.
+     including   Book Name,  Writter Name,  Book Code  &  Copy of the book.
 
 ----------------------------------------------------------------------------*/
 
